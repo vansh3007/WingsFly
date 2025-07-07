@@ -1,4 +1,4 @@
-# 📝 Home Screen UI - React Native CLI Task
+# Home Screen UI - React Native CLI Task
 
 This project is a submission for the **Fresher Developer Test Task**. It replicates the **Home Screen** from the provided Figma design using **React Native CLI** (no Expo), focusing on modular structure, clean UI, smooth animations, and good development practices.
 
@@ -24,7 +24,7 @@ This project is a submission for the **Fresher Developer Test Task**. It replica
 
 ---
 
-## 🧱 Folder Structure
+## Folder Structure
 
 ```
 /WingsFly
@@ -40,14 +40,15 @@ This project is a submission for the **Fresher Developer Test Task**. It replica
     │   └── HomeScreen.tsx
     └── App.tsx
 ├── Readme.md
+└── screenshots
 ```
 
 ---
 
-## 📦 Setup Instructions
+## Setup Instructions
 
 1. **Clone the repository**  
-   git clone https://github.com/your-username/home-screen-task.git
+   git clone https://github.com/vansh3007/WingsFly.git
    cd home-screen-task
 
 2. **Install dependencies**  
@@ -63,7 +64,7 @@ This project is a submission for the **Fresher Developer Test Task**. It replica
 
 ---
 
-## 🧠 Key Decisions & Assumptions
+##  Key Decisions & Assumptions
 
 - **React Native CLI** was used as per requirement.
 - Used **TypeScript** for type safety and maintainability.
@@ -75,23 +76,23 @@ This project is a submission for the **Fresher Developer Test Task**. It replica
 ---
 
 
-## 📸 Screenshots
+##  Screenshots
 
-### 🏠 Home Screen
+###  Home Screen
 
 <img src="./screenshots/Screenshot_20250707_132930_WingsFly.jpg" width="300" />
 
-### ➕ Bottom Drawer
+###  Bottom Drawer
 
 <img src="./screenshots/Screenshot_20250707_132938_WingsFly.jpg" width="300" />
 
 ---
 
-## 🤝 Author
+##  Author
 
 - **Your Name**  
-- [GitHub Profile](https://github.com/your-username)  
-- Email: yourname@example.com
+- [GitHub Profile](https://github.com/vansh3007)  
+- Email: vanshshrivastava30@gmail.com
 
 ---
 
