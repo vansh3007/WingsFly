@@ -1,97 +1,97 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# 📝 Home Screen UI - React Native CLI Task
 
-# Getting Started
+This project is a submission for the **Fresher Developer Test Task**. It replicates the **Home Screen** from the provided Figma design using **React Native CLI** (no Expo), focusing on modular structure, clean UI, smooth animations, and good development practices.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+---
 
-## Step 1: Start Metro
+## ✅ Features Implemented
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+- ✅ Horizontal **Date Selector** (15–21) with highlighted selection
+- ✅ “**Today’s Quote**” section with animated progress bar and thumb
+- ✅ Scrollable **Task List** displaying:
+  - Image/Icon
+  - Title
+  - Time with colored pill
+  - Tags (e.g., Habit | Must)
+  - Status icon (check, clock, or arrow)
+- ✅ Floating “**+**” action button (FAB)
+- ✅ Slide-up **Bottom Drawer Modal** with 4 action options:
+  - Habit
+  - Recurring Task
+  - Task
+  - Goal of the Day
+- ✅ **Smooth drawer animation** using the `Animated` API
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+---
 
-```sh
-# Using npm
-npm start
+## 🧱 Folder Structure
 
-# OR using Yarn
-yarn start
+```
+/WingsFly
+├── /src 
+    ├── /assets                  
+    ├── /components
+    │   ├── DateSelector.tsx
+    │   ├── QuoteSection.tsx
+    │   ├── TaskItem.tsx
+    │   ├── FloatingActionButton.tsx
+    │   └── BottomDrawer.tsx
+    ├── /screens
+    │   └── HomeScreen.tsx
+    └── App.tsx
+├── Readme.md
 ```
 
-## Step 2: Build and run your app
+---
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+## 📦 Setup Instructions
 
-### Android
+1. **Clone the repository**  
+   git clone https://github.com/your-username/home-screen-task.git
+   cd home-screen-task
 
-```sh
-# Using npm
-npm run android
+2. **Install dependencies**  
+   npm install
 
-# OR using Yarn
-yarn android
-```
+3. **Run on Android device/emulator**  
+   npx react-native run-android
 
-### iOS
+   Or on iOS (Mac only):
+   npx react-native run-ios
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+> ⚠️ Ensure a device/emulator is running and your environment is properly set up for React Native CLI.
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+---
 
-```sh
-bundle install
-```
+## 🧠 Key Decisions & Assumptions
 
-Then, and every time you update your native dependencies, run:
+- **React Native CLI** was used as per requirement.
+- Used **TypeScript** for type safety and maintainability.
+- All **design values were matched pixel-by-pixel** based on the Figma reference.
+- Icons were loaded via `react-native-vector-icons` and task images via local assets.
+- Used the **Animated API** for the drawer transition (no 3rd party like `react-native-reanimated`).
+- No external theming library was added for dark mode (for simplicity) but can be added via `react-native-paper` or Context API.
 
-```sh
-bundle exec pod install
-```
+---
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
 
-```sh
-# Using npm
-npm run ios
+## 📸 Screenshots
 
-# OR using Yarn
-yarn ios
-```
+### 🏠 Home Screen
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+<img src="./screenshots/Screenshot_20250707_132930_WingsFly.jpg" width="300" />
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+### ➕ Bottom Drawer
 
-## Step 3: Modify your app
+<img src="./screenshots/Screenshot_20250707_132938_WingsFly.jpg" width="300" />
 
-Now that you have successfully run the app, let's make changes!
+---
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+## 🤝 Author
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+- **Your Name**  
+- [GitHub Profile](https://github.com/your-username)  
+- Email: yourname@example.com
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+---
 
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
